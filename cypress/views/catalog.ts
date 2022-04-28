@@ -18,7 +18,7 @@ export const customizeVMBtn = '[data-test-id="customize-vm-btn"]';
 
 // review and create
 export const vmName = '#vm-customize-NAME';
-export const diskSourceSelect = '[data-test-id="default"]';
+export const diskSourceSelect = '.select-source-option';
 export const diskSourceURL = 'input[aria-label="Image URL"]';
 export const customizeVMSubmitBtn = '[data-test-id="customize-vm-submit-button"]';
 

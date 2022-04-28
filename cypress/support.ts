@@ -23,3 +23,8 @@ Cypress.Cookies.debug(true);
 Cypress.Cookies.defaults({
   preserve: ['openshift-session-token', 'csrf-token'],
 });
+
+export const testName = `test-${Math.random()
+    .toString(36)
+    .replace(/[^a-z]+/g, '')
+    .substr(0, 5)}`;

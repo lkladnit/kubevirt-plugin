@@ -17,4 +17,5 @@ export type VirtualMachineData = {
   template?: Template;
   diskSource?: DiskSource;
   startOnCreation?: boolean;
+  cdrom?: boolean,
 };

@@ -56,6 +56,12 @@ export const fillReviewAndCreate = (vmData: VirtualMachineData) => {
       cy.get(catalogView.diskSourceURL).type(vmData.diskSource.value);
       break;
     }
+    case 'URL': {
+      cy.get(catalogView.diskSourceSelect).click();
+      cy.byLegacyTestID(vmData.diskSource.selectorID).click();
+      cy.get(catalogView.diskSourceURL).type(vmData.diskSource.value);
+      break;
+    }
     default: {
       break;
     }
